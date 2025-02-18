@@ -60,6 +60,6 @@ Este proyecto es el resultado del proyecto final del curso de React js en CoderH
 
 ## Contacto
 
-Puedes contactarme en [correo electrónico].
+Puedes contactarme en luisangetellez30@gmail.com].
 
 ¡Espero que este README te sea útil! Si tienes alguna pregunta, no dudes en preguntar.
