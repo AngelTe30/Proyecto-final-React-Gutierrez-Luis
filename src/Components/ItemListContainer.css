@@ -1,0 +1,127 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.filters{
+    display: flex;
+    margin: 2vw auto;
+    width: 70%;
+    justify-content: space-between;
+    >.filter{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.Shop{
+    display: flex;
+    margin: 1rem 6rem;
+    width: 100vw;
+    height: auto;
+    gap: 1.5rem;
+    justify-content: space-between;
+
+}
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+}
+
+@media screen and (min-width: 1700px) {
+    .card{
+        grid-template-columns: repeat(5,1fr);
+    }
+}
+
+@media screen and (max-width:1300px){
+    .card{
+        grid-template-columns: repeat(3,1fr);
+    }    
+}
+
+@media screen and (max-width:1100px){
+    .Shop{
+
+        margin: 1rem 2rem;
+    
+    }
+
+}
+@media screen and (max-width:900px){
+    
+    .Shop{
+
+        margin: 1rem 5rem;
+    
+    }
+
+    .card{
+        grid-template-columns: repeat(2,1fr);
+    }    
+}
+.Item-card{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    width: 300px;
+    height: 450px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    >.Item-image{
+        width: 100%;
+        height: 50%;
+        margin: .5rem auto;
+        object-fit: contain;
+        overflow: hidden;
+    }
+    >.item-description{
+        display: grid;
+        width: 90%;
+        height: 30%;
+        margin: auto;
+        >.Item-title{
+            font-size: 1.2vh;
+            font-weight: 600;
+            margin: .5rem;
+            text-align: center;
+    
+        }
+        >.Item-price{
+            font-size: 1rem;
+            font-weight: 600;
+            margin: .5rem auto;
+        }
+    }
+    >.btn-details{
+        display: flex;
+        width: 100%;
+        height: 20%;
+        justify-content: center;
+        align-items: center;
+        
+        >.btn{
+            font-weight:600;
+            width: 45%;
+            height: 30%;
+            border-radius: 20px;
+            border: #ffffff;
+            background-color: #FFF2C2;
+            box-shadow:  7px 7px 9px #c2bdac,
+            -7px -7px 9px #ffffe8;
+            transition: .5s ease;
+            text-decoration: none;
+            text-align: center;
+            color: black;
+        }
+        >.btn:hover{
+            background-color: #ebd897;
+        }
+        >.btn:active{
+            background: linear-gradient(145deg, #cdc8b6, #f4eed8);
+        }
+    } 
+}
